@@ -1,0 +1,70 @@
+@keyframes logoAnimation {
+    0% {
+      width: 25px;
+      opacity: 0;  
+    }
+
+    100% {
+      width: 475px;
+      opacity: 1;
+    }
+  }
+
+  body {
+    font-family: 'Poppins', serif;
+    background-image: url('images/concrete_seamless.png');
+    background-color: #f1f1f1;
+  }
+  #logo {
+    animation: logoAnimation 5s forwards;
+    position: relative;
+    left: 0;
+    width: 25px;
+    height: 100%;
+  }
+  
+  nav {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: underline;
+    padding: 0 1rem;
+    color: blue;
+  }
+  
+  .nav_links a:hover {
+    color: #45ADAD;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #45ADAD;
+  }
+  
+  /* Style the header elements that are direct children of a card class */
+  .card > header {
+    background: #288088;
+    border: 2px solid #45ADAD;
+    border-radius: 50px 50px 0 0;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Fix the border-radius issue */
+  .card > header:first-child {
+    border-radius: 50px 50px 0 0;
+  }
+  
+  .card > header:last-child {
+    border-radius: 0 0 50px 50px;
+  }
