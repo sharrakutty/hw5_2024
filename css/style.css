@@ -9,26 +9,24 @@
   }
 }
 
-  body {
-    font-family: 'Poppins', serif;
-    background-image: url('images/concrete_seamless.png');
-    background-color: #f1f1f1;
-  }
+body {
+  font-family: 'Poppins', serif;
+  background-image: url('path/to/concrete_seamless.png');
+  background-color: #f1f1f1;
+}
   
-  #logo {
-    animation: logoAnimation 5s forwards;
-    position: relative;
-    top:0%; right:0%; left: 34%; bottom:0%;
-    transform-origin: center;
-  }
-  
+#logo {
+  animation: logoAnimation 5s forwards;
+  position: relative;
+  transform-origin: center;
+}
+ 
+@media screen and (max-width:720px) {
   nav {
-    width: 50%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
   }
-  
+    
   nav a {
     text-decoration: underline;
     padding: 0 1rem;
@@ -39,28 +37,17 @@
     color: #45ADAD;
   }
 
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .card > header {
     background: #288088;
     border: 2px solid #45ADAD;
     border-radius: 50px 50px 0 0;
     padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
-  header > header {
-    border-radius: 50px;
-  }
-  
   .pricing {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -78,4 +65,15 @@
     border: 10px solid #50C7C7;
     margin: 10px;
     width: 300px;
+  }  
+
+  header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
+}
+
+
+  
