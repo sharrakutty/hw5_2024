@@ -60,11 +60,24 @@
     justify-content: center;
   }
   
-  /* Fix the border-radius issue */
-  .card > header:first-child {
-    border-radius: 50px 50px 0 0;
+  .pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
   }
   
-  .card > header:last-child {
-    border-radius: 0 0 50px 50px;
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .gallery img {
+    border: 10px solid #50C7C7;
+    margin: 10px;
+    width: 300px;
   }
